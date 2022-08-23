@@ -1,11 +1,16 @@
 import Header from '../../components/Header';
-import './index.css'
+import './index.css';
+import { Container } from 'react-bootstrap';
 
 function Dashboard() {
   return (
-    <div>
-      <Header></Header>
+    <>
+    <div className = 'Dashboard-background'>
+      <Container>
+        <Header />
+      </Container>
     </div>
+    </>
   );
 }
 
