@@ -1,10 +1,19 @@
+import { Container } from 'react-bootstrap';
 import Header from './../../components/Header/Header';
 
-function Testimonials() {
+
+type TestimonialProps = {
+    //
+}
+
+function Testimonials(props: TestimonialProps) {
     return (
-        <div>
-            <Header />
-        </div>
+        <>
+        <Header />
+        <Container>
+            <div>Testimonials</div>
+        </Container>
+        </>
     );
 }
 

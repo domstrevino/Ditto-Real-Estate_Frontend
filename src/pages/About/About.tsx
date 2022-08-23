@@ -1,10 +1,19 @@
+import { Container } from 'react-bootstrap';
 import Header from './../../components/Header/Header';
 
-function About() {
+
+type AboutProps = {
+    //
+}
+
+function About(props: AboutProps) {
     return (
-        <div>
-            <Header></Header>
-        </div>
+        <>
+        <Header />
+        <Container>
+            <div>About</div>
+        </Container>
+        </>
     );
 }
 

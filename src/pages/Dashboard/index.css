@@ -21,3 +21,11 @@
 .Dashboard-link {
   color: #61dafb;
 }
+
+.Dashboard-background {
+  background-image: url(./../../images/downtown-okc.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  aspect-ratio: 3/2;
+}
