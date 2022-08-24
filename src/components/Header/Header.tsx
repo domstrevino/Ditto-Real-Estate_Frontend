@@ -1,9 +1,10 @@
+import { Menu } from '@mui/icons-material';
 import { Nav } from 'react-bootstrap';
 import Navbar from 'react-bootstrap/Navbar';
-import { Menu } from '@mui/icons-material';
+import picture from './../../components/Assets/ditto_real-estate.png';
 import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
-import picture from './../../components/Assets/ditto_real-estate.png';
+
 
 type HeaderProps = {
     //
@@ -27,7 +28,7 @@ function Header(props: HeaderProps) {
                     <Nav.Link className = 'NavLink' href = '/Testimonials'>Testimonials</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Menu style = {{ margin: 10 }} />
+                    <Menu className = 'Menu' />
                 </Nav.Item>
             </Nav>
         </Navbar>
