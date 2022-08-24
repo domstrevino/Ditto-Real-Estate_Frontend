@@ -1,0 +1,14 @@
+
+.NavItem {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.NavClass {
+    align-items: center;
+}
+
+.NavLink {
+    color: white;
+    font-size: 20px;
+}

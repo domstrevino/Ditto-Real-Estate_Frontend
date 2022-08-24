@@ -1,5 +1,7 @@
 .Dashboard {
-  text-align: center;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 .Dashboard-logo {
@@ -7,27 +9,41 @@
   pointer-events: none;
 }
 
-.Dashboard-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.Dashboard-link {
-  color: #61dafb;
-}
-
 .Dashboard-background {
   background-image: url('./../../components/Assets/okie.jpg');
-  background-position: center;
+  object-fit: cover;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
   width: 100vw;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Montserrat Thin';
+}
+
+.Dashboard-overlay {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.Dashboard-content {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Dashboard-h1 {
+  font-size: 70px;
+  letter-spacing: 3px;
+}
+
+.Dashboard-p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+  font-size: 21px;
 }

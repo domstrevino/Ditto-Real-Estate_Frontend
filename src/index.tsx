@@ -10,13 +10,13 @@ const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Routes>
-        <Route>
-          <Route path = '/' element = { <Dashboard /> } />
-          <Route path = '/Contact' element = { <Contact /> } />
-          <Route path = '/Testimonials' element = { <Testimonials /> } />
-        </Route>
-      </Routes>
+        <Routes>
+          <Route>
+            <Route path = '/' element = { <Dashboard /> } />
+            <Route path = '/Contact' element = { <Contact /> } />
+            <Route path = '/Testimonials' element = { <Testimonials /> } />
+          </Route>
+        </Routes>
     </BrowserRouter>
   </React.StrictMode>
 );

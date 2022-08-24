@@ -2,27 +2,29 @@ import { Nav } from 'react-bootstrap';
 import Navbar from 'react-bootstrap/Navbar';
 import { Menu } from '@mui/icons-material';
 import 'bootstrap/dist/css/bootstrap.css';
+import './index.css';
 import picture from './../../components/Assets/ditto_real-estate.png';
 
-function Header() {
+type HeaderProps = {
+    //
+}
+
+function Header(props: HeaderProps) {
     return (
-        <Navbar>
-            <Nav className="ml-auto" style = {{ alignItems: 'center' }}>
-                <Nav.Item>
-                    <Navbar.Brand style={{ paddingLeft: '10px' }}>
+        <Navbar className = 'NavClass'>
+            <Nav className = "ml-auto">
+                <Navbar.Brand>
+                    <Nav.Link href = '/'>
                         <img className = 'Dashboard-logo' src = {picture} alt = 'logo' />
-                    </Navbar.Brand>
-                </Nav.Item>
+                    </Nav.Link>
+                </Navbar.Brand>
             </Nav>
-            <Nav className = 'ms-auto' style = {{ alignItems: 'center' }}>
-                <Nav.Item style = {{ paddingLeft: '10px', paddingRight: '10px' }}>
-                    <Nav.Link href = '/'>Home</Nav.Link>
+            <Nav className = 'ms-auto'>
+                <Nav.Item className = 'NavItem'>
+                    <Nav.Link className = 'NavLink' href = '/Contact'>Contact</Nav.Link>
                 </Nav.Item>
-                <Nav.Item style = {{ paddingLeft: '10px', paddingRight: '10px' }}>
-                    <Nav.Link href = '/Contact'>Contact</Nav.Link>
-                </Nav.Item>
-                <Nav.Item style = {{ paddingLeft: '10px', paddingRight: '10px' }}>
-                    <Nav.Link href = '/Testimonials'>Testimonials</Nav.Link>
+                <Nav.Item className = 'NavItem'>
+                    <Nav.Link className = 'NavLink' href = '/Testimonials'>Testimonials</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
                     <Menu style = {{ margin: 10 }} />
