@@ -8,6 +8,8 @@
 }
 
 .Dashboard-background {
+  position: fixed;
+  /* overflow-y: scroll; */
   background-image: url('./../../components/Assets/okie.jpg');
   background-position: cover;
   background-attachment: fixed;
@@ -17,13 +19,12 @@
 }
 
 .Dashboard-overlay {
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  position: fixed;
+  overflow-y: scroll;
+  background-color: rgba(0, 0, 0, 0.7);
+
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .Dashboard-content {
@@ -56,7 +57,7 @@
 }
 
 .Dashboard-about {
-  margin-top: 25%;
+  margin-top: 15%;
   color: rgba(255, 255, 255, 1);
 
   display: flex;

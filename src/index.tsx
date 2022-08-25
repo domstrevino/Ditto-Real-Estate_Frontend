@@ -20,7 +20,7 @@ root.render(
                         <Routes>
                             <Route>
                             <Route path = '/' element = { <Dashboard /> } />
-                            <Route path = '/Contact' element = { <Contact /> } />
+                            <Route path = '/Contact' element = { <Contact name={''} email={''} message={''} /> } />
                             <Route path = '/Testimonials' element = { <Testimonials /> } />
                             </Route>
                         </Routes>

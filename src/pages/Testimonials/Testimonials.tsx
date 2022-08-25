@@ -87,39 +87,6 @@ function Testimonials(props: TestimonialProps) {
                 autoPlayInterval = {4000}
                 autoPlayStrategy = {'default'}
                 />
-                {/* <div>hi</div>
-                <div>hi</div>
-                <div>hi</div>
-                <div>hi</div>
-                <div>hi</div>
-                <div>hi</div>
-                <div>hi</div>
-                <div>hi</div>
-                <div>hi</div>
-                <div>hi</div>
-                <div>hi</div>
-                <div>hi</div>
-                <div>hi</div>
-                <div>hi</div>
-                <div>hi</div>
-                <div>hi</div>
-                <div>hi</div>
-                <div>hi</div>
-                <div>hi</div>
-                <div>hi</div>
-                <div>hi</div>
-                <div>hi</div>
-                <div>hi</div>
-                <div>hi</div>
-                <div>hi</div>
-                <div>hi</div>
-                <div>hi</div>
-                <div>hi</div>
-                <div>hi</div>
-                <div>hi</div>
-                <div>hi</div>
-                <div>hi</div>
-                <div>hi</div> */}
             </Container>
         </div>
     );
