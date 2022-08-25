@@ -10,25 +10,25 @@ import { Container } from 'react-bootstrap';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
-  <React.StrictMode>
-    <div className = 'Dashboard-background'>
-      <div className = 'Dashboard-overlay'>
-        <Container>
-          <Header />
-    
-          <BrowserRouter>
-              <Routes>
-                <Route>
-                  <Route path = '/' element = { <Dashboard /> } />
-                  <Route path = '/Contact' element = { <Contact /> } />
-                  <Route path = '/Testimonials' element = { <Testimonials /> } />
-                </Route>
-              </Routes>
-          </BrowserRouter>
-          
-        </Container>
-      </div>
-    </div>
-  </React.StrictMode>
+    <React.StrictMode>
+        <div className = 'Dashboard-background'>
+            <div className = 'Dashboard-overlay'>
+                <Container>
+                    <Header />
+        
+                    <BrowserRouter>
+                        <Routes>
+                            <Route>
+                            <Route path = '/' element = { <Dashboard /> } />
+                            <Route path = '/Contact' element = { <Contact /> } />
+                            <Route path = '/Testimonials' element = { <Testimonials /> } />
+                            </Route>
+                        </Routes>
+                    </BrowserRouter>
+            
+                </Container>
+            </div>
+        </div>
+    </React.StrictMode>
 );
 
