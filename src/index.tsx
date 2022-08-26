@@ -8,6 +8,8 @@ import Testimonials from './pages/Testimonials/Testimonials';
 import Header from './components/Header';
 import { Container } from 'react-bootstrap';
 
+require("dotenv").config();
+
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
     <React.StrictMode>
@@ -20,7 +22,7 @@ root.render(
                         <Routes>
                             <Route>
                             <Route path = '/' element = { <Dashboard /> } />
-                            <Route path = '/Contact' element = { <Contact name={''} email={''} message={''} error={''} mailSent={false} /> } />
+                            <Route path = '/Contact' element = { <Contact /> } />
                             <Route path = '/Testimonials' element = { <Testimonials /> } />
                             </Route>
                         </Routes>

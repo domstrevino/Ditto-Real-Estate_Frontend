@@ -1,55 +1,52 @@
 /* eslint-disable no-lone-blocks */
-import axios from 'axios';
 import { Container } from 'react-bootstrap';
 import './index.css';
 import image from './../../components/Assets/Sandy-Ditto.jpg';
 import React, { useState } from 'react';
 
-const API_PATH = 'http://localhost/src/api/index.php';
-
 type ContactProps = {
-    name: string;
-    email: string;
-    message: string;
-    mailSent: boolean;
-    error: string;
+    //
 }
 
 function Contact(props: ContactProps) {
-    const [formData, setFormData] = useState({name: '', email: '', message: '', mailSent: false, error: null})
-    
-    const handleSubmit = (e: any) => {
-        
+    const [status, setStatus] = useState("Submit");
+
+    const handleSubmit = async (e: any) => {
         e.preventDefault();
+        setStatus("Sending...");
+        const { name, email, message } = e.target.elements;
 
-        axios({
-        method: 'post',
-        url: `${API_PATH}`,
-        headers: { 'content-type': 'application/json' },
-        data: formData
-        })
-        .then(result => {
-            setFormData({ ...formData,
-            mailSent: result.data.sent
-            })
-        })
-        .catch(error => setFormData({ ...formData, error: error.message }));
+        let details = {
+            name: name.value,
+            email: email.value,
+            message: message.value
+        };
+        let response = await fetch("http://localhost:5000/contact", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json;charset=utf-8",
+        },
+        body: JSON.stringify(details),
+        });
+        setStatus("Submit");
+        let result = await response.json();
+        alert(result.status);
     };
+    
 
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setFormData({...formData, [e.target.name]: e.target.value});
-    };
-    const handleChangeTextArea = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-        setFormData({...formData, [e.target.name]: e.target.value});
-    }
+    // const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    //     setFormData({...formData, [e.target.name]: e.target.value});
+    // };
+    // const handleChangeTextArea = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    //     setFormData({...formData, [e.target.name]: e.target.value});
+    // }
 
     return (
         <div className = 'Contact'>
             <Container className = 'Contact-about' style = {{ maxWidth: '80%', marginTop: '5%'}}>
                 <div className = 'Contact-about-content-body'>
                     <div className = 'Contact-about-content-left'>
-
-                        <form method = 'post' action = '<?php echo ($_SERVER' onSubmit = {handleSubmit} style = {{ height: '100%'}}>
+                        <form onSubmit = {handleSubmit} style = {{ height: '100%'}}>
                             <h1>Contact Us</h1>
                             <p>Please fill this form in a decent manner</p>
 
@@ -58,7 +55,7 @@ function Contact(props: ContactProps) {
                                     <label className = 'Contact-label' htmlFor = 'name'>Full Name:</label>
 
                                     <div className = 'Contact-input'>
-                                        <input id = 'name' name = 'name' type = 'text' onChange = {handleChange} />
+                                        <input id = 'name' name = 'name' type = 'text' />
                                     </div>
                                 </li>
 
@@ -66,7 +63,7 @@ function Contact(props: ContactProps) {
                                     <label className = 'Contact-label' htmlFor = 'email'>E-mail:</label>
 
                                     <div className = 'Contact-input'>
-                                        <input id = 'email' name = 'email' type = 'text' onChange = {handleChange}/>
+                                        <input id = 'email' name = 'email' type = 'text' />
                                     </div>
                                 </li>
 
@@ -74,7 +71,7 @@ function Contact(props: ContactProps) {
                                     <label className = 'Contact-label' htmlFor = 'message'>Message:</label>
 
                                     <div className = 'Contact-input'>
-                                        <textarea rows = {10} style = {{ height: 'auto', resize: 'none' }} id = 'message' name = 'message' onChange = {handleChangeTextArea} />
+                                        <textarea rows = {10} style = {{ height: 'auto', resize: 'none' }} id = 'message' name = 'message' />
                                     </div>
                                 </li>
 
@@ -82,10 +79,10 @@ function Contact(props: ContactProps) {
                                     <input type = 'submit' value = 'Submit' />
                                 </div>
                             </ul>
-
                         </form>
                     </div>
                 </div>
+
                 <div className = 'Contact-about-content-body'>
                     <div className = 'Contact-about-content-right'>
                         <img src = {image} alt = 'logo' />
@@ -107,10 +104,3 @@ function Contact(props: ContactProps) {
 }
 
 export default Contact;
-
-
-
-//https://stackoverflow.com/questions/57766906/react-typescript-how-to-get-form-values-and-response-codes-using-fetch
-//https://salesforce.stackexchange.com/questions/299002/cannot-assign-to-read-only-property-field-name-of-object-object
-//https://www.pluralsight.com/guides/defining-props-in-react-function-component-with-typescript
-//https://blog.bitsrc.io/how-to-build-a-contact-form-with-react-js-and-php-d5977c17fec0
