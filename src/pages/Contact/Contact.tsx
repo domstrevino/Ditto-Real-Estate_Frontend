@@ -5,47 +5,51 @@ import './index.css';
 import image from './../../components/Assets/Sandy-Ditto.jpg';
 import React, { useState } from 'react';
 
-const API_PATH = 'http://localhost:3000/DITTO_REALESTATE/src/contact/index.php';
+const API_PATH = 'http://localhost/src/api/index.php';
 
 type ContactProps = {
     name: string;
     email: string;
     message: string;
+    mailSent: boolean;
+    error: string;
 }
 
 function Contact(props: ContactProps) {
-    const [name, setName] = useState(props.name);
+    const [formData, setFormData] = useState({name: '', email: '', message: '', mailSent: false, error: null})
+    
+    const handleSubmit = (e: any) => {
+        
+        e.preventDefault();
 
-    const [formData, setFormData] = useState({name: '', email: '', message: ''})
-    const handleSubmit = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setFormData({...formData, [e.target.name]: e.target.value})
-        // e.preventDefault();
-        // axios({
-        // method: 'post',
-        // url: `${API_PATH}`,
-        // headers: { 'content-type': 'application/json' },
-        // data: this.state
-        // })
-        // .then(result => {
-        //     this.setState({
-        //     mailSent: result.data.sent
-        //     })
-        // })
-        // .catch(error => this.setState({ error: error.message }));
-        console.log(formData)
+        axios({
+        method: 'post',
+        url: `${API_PATH}`,
+        headers: { 'content-type': 'application/json' },
+        data: formData
+        })
+        .then(result => {
+            setFormData({ ...formData,
+            mailSent: result.data.sent
+            })
+        })
+        .catch(error => setFormData({ ...formData, error: error.message }));
     };
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setFormData({...formData, [e.target.name]: e.target.value});
-        console.log(formData);
     };
+    const handleChangeTextArea = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+        setFormData({...formData, [e.target.name]: e.target.value});
+    }
 
     return (
         <div className = 'Contact'>
             <Container className = 'Contact-about' style = {{ maxWidth: '80%', marginTop: '5%'}}>
                 <div className = 'Contact-about-content-body'>
                     <div className = 'Contact-about-content-left'>
-                        <form action = '#' style = {{ height: '100%'}}>
+
+                        <form method = 'post' action = '<?php echo ($_SERVER' onSubmit = {handleSubmit} style = {{ height: '100%'}}>
                             <h1>Contact Us</h1>
                             <p>Please fill this form in a decent manner</p>
 
@@ -70,12 +74,12 @@ function Contact(props: ContactProps) {
                                     <label className = 'Contact-label' htmlFor = 'message'>Message:</label>
 
                                     <div className = 'Contact-input'>
-                                        <textarea rows = {10} style = {{ height: 'auto', resize: 'none' }} id = 'message' name = 'message' />
+                                        <textarea rows = {10} style = {{ height: 'auto', resize: 'none' }} id = 'message' name = 'message' onChange = {handleChangeTextArea} />
                                     </div>
                                 </li>
 
                                 <div className = 'Contact-submit'>
-                                    <input type = 'submit' value = 'Submit' onClick={() => handleSubmit}/>
+                                    <input type = 'submit' value = 'Submit' />
                                 </div>
                             </ul>
 

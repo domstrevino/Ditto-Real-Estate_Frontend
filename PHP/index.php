@@ -1,5 +1,11 @@
 <?php
-header("Access-Control-Allow-Origin: *");
+echo 'hello, world!'
+?>
+
+<!-- <?php
+session_start();
+header("Access-Control-Allow-Origin: content-type");
+header('Location: index.php');
 $rest_json = file_get_contents("php://input");
 $_POST = json_decode($rest_json, true);
 
@@ -40,4 +46,4 @@ if ($_POST)
 	echo json_encode(["sent" => false, "message" => "Something went wrong"]);
 	}
 
-?>
+?> -->
