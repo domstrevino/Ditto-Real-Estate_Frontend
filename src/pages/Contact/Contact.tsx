@@ -1,17 +1,14 @@
 import { Card, CardContent } from '@mui/material';
 import { Container } from 'react-bootstrap';
-import { useState } from 'react';
 
 import picture from './../../images/Sandy-Ditto.jpg';
 import './index.css';
 
 
 function Contact() {
-    const [status, setStatus] = useState("Submit");
 
     const handleSubmit = async (e: any) => {
         e.preventDefault();
-        setStatus("Sending...");
 
         const { name, email, message } = e.target.elements;
         const details = {
@@ -27,7 +24,6 @@ function Contact() {
             },
             body: JSON.stringify(details),
         });
-        setStatus("Submit");
 
         const result = await response.json();
         alert(result.status);
