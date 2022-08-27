@@ -1,8 +1,9 @@
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
+
 import './index.css';
-import { Container } from 'react-bootstrap';
-import { Card, CardContent, Typography } from '@mui/material';
+
+import { Container, Card, CardContent, Typography } from '@mui/material';
 import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
 
 
@@ -19,51 +20,59 @@ const testimonialFour = "Sandy Ditto's assistance, expedience and professionalis
 const fourWriter = '-Brian Shingleton';
 
 const testimonials = [
-    <Card className = 'Testimonials-card' variant = 'outlined' style = {{ backgroundColor: 'rgb(18, 18, 18)'}}>
-        <CardContent>
-            <Typography className = 'Testimonials-card-content' gutterBottom>
-                <FaQuoteLeft className = 'quoteLeft' />
+    <Card className = 'Card' variant = 'outlined'>
+        <CardContent className = 'Card-Content'>
+            <Typography gutterBottom>
+                <FaQuoteLeft className = 'Quote-Left' />
                 {testimonialOne}
-                <FaQuoteRight className='quoteRight' />
+                <FaQuoteRight className='Quote-Right' />
             </Typography>
             <div>&nbsp;</div>
-            <Typography className = 'Testimonials-card-content' style = {{ fontStyle: 'italic', fontWeight: 'bold', letterSpacing: 1, color: 'white' }} gutterBottom>{oneWriter}</Typography>
+            <Typography className = 'Author' gutterBottom>
+                {oneWriter}
+            </Typography>
         </CardContent>
     </Card>,
 
-    <Card className = 'Testimonials-card' variant = 'outlined' style = {{ backgroundColor: 'rgb(18, 18, 18)'}}>
-        <CardContent>
-            <Typography className = 'Testimonials-card-content' gutterBottom>
-                <FaQuoteLeft className = 'quoteLeft' />
+    <Card className = 'Card' variant = 'outlined'>
+        <CardContent className = 'Card-Content'>
+            <Typography gutterBottom>
+                <FaQuoteLeft className = 'Quote-Left' />
                 {testimonialTwo}
-                <FaQuoteRight className='quoteRight' />
+                <FaQuoteRight className='Quote-Right' />
             </Typography>
             <div>&nbsp;</div>
-            <Typography className = 'Testimonials-card-content' style = {{ fontStyle: 'italic', fontWeight: 'bold', letterSpacing: 1, color: 'white' }} gutterBottom>{twoWriter}</Typography>
+            <Typography className = 'Author' gutterBottom>
+                {twoWriter}
+            </Typography>        
         </CardContent>
     </Card>,
     
-    <Card className = 'Testimonials-card' variant = 'outlined' style = {{ backgroundColor: 'rgb(18, 18, 18)'}}>
-        <CardContent>
-            <Typography className = 'Testimonials-card-content' gutterBottom>
-                <FaQuoteLeft className = 'quoteLeft' />
+    <Card className = 'Card' variant = 'outlined'>
+        <CardContent className = 'Card-Content'>
+            <Typography gutterBottom>
+                <FaQuoteLeft className = 'Quote-Left' />
                 {testimonialThree}
-                <FaQuoteRight className='quoteRight' />
+                <FaQuoteRight className='Quote-Right' />
             </Typography>
             <div>&nbsp;</div>
-            <Typography className = 'Testimonials-card-content' style = {{ fontStyle: 'italic', fontWeight: 'bold', letterSpacing: 1, color: 'white' }} gutterBottom>{threeWriter}</Typography>
+            <Typography className = 'Author' gutterBottom>
+                {threeWriter}
+            </Typography>
         </CardContent>
     </Card>,
 
-    <Card className = 'Testimonials-card' variant = 'outlined' style = {{ backgroundColor: 'rgb(18, 18, 18)'}}>
-        <CardContent>
-            <Typography className = 'Testimonials-card-content' gutterBottom>
-                <FaQuoteLeft className = 'quoteLeft' />
+    <Card className = 'Card' variant = 'outlined'>
+        <CardContent className = 'Card-Content'>
+            <Typography gutterBottom>
+                <FaQuoteLeft className = 'Quote-Left' />
                 {testimonialFour}
-                <FaQuoteRight className='quoteRight' />
+                <FaQuoteRight className='Quote-Right' />
             </Typography>
             <div>&nbsp;</div>
-            <Typography className = 'Testimonials-card-content' style = {{ fontStyle: 'italic', fontWeight: 'bold', letterSpacing: 1, color: 'white' }} gutterBottom>{fourWriter}</Typography>
+            <Typography className = 'Author' gutterBottom>
+                {fourWriter}
+            </Typography>
         </CardContent>
     </Card>
     
@@ -72,18 +81,20 @@ const testimonials = [
 function Testimonials() {
     return (
         <div className = 'Testimonials'>
-            <h1 className = 'Testimonials-h1'>Testimonials</h1>
-            <p className = 'Testimonials-p'>What our clients are saying...</p>
-            <Container className = 'Testimonials-content'>
-                <AliceCarousel 
-                items = {testimonials}
-                infinite = {true}
-                animationType = {'fadeout'}
-                autoPlay = {true}
-                autoPlayInterval = {4000}
-                autoPlayStrategy = {'default'}
-                disableButtonsControls = {true}
-                />
+            <h1 className = 'Head-h1'>Testimonials</h1>
+            <p className = 'Head-p'>What clients are saying...</p>
+            <Container>
+                <div className = 'Body'>
+                    <AliceCarousel 
+                    items = {testimonials}
+                    infinite = {true}
+                    animationType = {'fadeout'}
+                    autoPlay = {true}
+                    autoPlayInterval = {4000}
+                    autoPlayStrategy = {'default'}
+                    disableButtonsControls = {true}
+                    />
+                </div>
             </Container>
         </div>
     );

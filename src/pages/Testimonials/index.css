@@ -1,60 +1,65 @@
 .Testimonials {
     width: 100%;
     height: 100%;
+
+    font-family: 'fangsong';
+    color: rgb(255, 255, 255);
 }
 
-.Testimonials-content {
-    position: absolute; 
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 
-    color: white;
-    font-family:'Courier New', Courier, monospace;
-}
-
-.Testimonials-card {
-    margin: auto;
-    max-width: 50%;
-}
-
-.Testimonials-card-content {
-    color: rgba(255, 255, 255, 0.7);
-    font-family: fangsong;
-}
-
-.Testimonials-h1 {
+.Head-h1 {
     display: flex;
+    justify-content: center;
     margin: auto;
     max-width: 25%;
-    justify-content: center;
-    
+
     border-style: groove;
     border-top: none;
     border-left: none;
     border-right: none;
 
-    color: white;
-    font-family: fangsong;
-    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-.Testimonials-p {
+.Head-p {
     display: flex;
     justify-content: center;
 
+    font-size: 18px;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.Body {
+    margin-top: 15%;
+}
+
+
+.Card {
+    margin: auto;
+    max-width: 50%;
+}
+
+.Card-Content {
+    background-color: rgb(18, 18, 18);
     color: rgba(255, 255, 255, 0.7);
-    letter-spacing: 0.1rem;
-    font-family: fangsong;
-    font-size: large;
 }
 
-.quoteLeft {
+.Author {
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: 1;
+
+    color: rgb(255, 255, 255);
+}
+
+.Quote-Left {
     padding-right: 7px;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
-.quoteRight {
+.Quote-Right {
     padding-left: 7px;
-    color: white;
+    color: rgb(255, 255, 255);
 }

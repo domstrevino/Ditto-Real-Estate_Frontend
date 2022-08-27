@@ -46,8 +46,7 @@ function Dashboard() {
                     autoPlay = {true}
                     autoPlayInterval = {10000}
                     autoPlayStrategy = {'default'}
-                    // disableButtonsControls = {true}
-                    disableDotsControls = {true}
+                    disableButtonsControls = {true}
                 />
             </Container>
         </div>

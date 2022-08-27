@@ -11,12 +11,17 @@ app.use(express.json());
 app.use("/", router);
 app.listen(5000, () => console.log("Server Running"));
 
-
+    /* SECONDARY EMAIL */
+// service: 'gmail',
+// auth: {
+// user: "replyno675@gmail.com",
+// pass: "kurpcpgaxmuofnyd",
+// },
 const contactEmail = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-    user: "replyno675@gmail.com",
-    pass: "kurpcpgaxmuofnyd",
+    user: "ditto.website.submission@gmail.com",
+    pass: "lbnxmixnyddmqadv",
     },
 });
 
@@ -34,9 +39,9 @@ router.post("/contact", (req, res) => {
     const message = req.body.message; 
     const mail = {
     from: name,
-    to: "domstrevino@aol.com",
+    to: "sandiditto@aol.com",
     subject: "Contact Form Submission",
-    text: "Hello, World!",
+    text: " ",
     html: `<p>Name: ${name}</p>
             <p>Email: ${email}</p>
             <p>Message: ${message}</p>`,

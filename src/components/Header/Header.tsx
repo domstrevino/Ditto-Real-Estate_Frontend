@@ -1,16 +1,11 @@
-import { Menu } from '@mui/icons-material';
-import { Nav } from 'react-bootstrap';
-import Navbar from 'react-bootstrap/Navbar';
+import { Nav, Navbar } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
+
 import picture from './../../images/ditto_real-estate.png';
 
-type HeaderProps = {
-    //
-}
 
-
-function Header(props: HeaderProps) {
+function Header() {
     return (
         <Navbar className = 'NavClass'>
             <Nav className = "ml-auto">
@@ -30,9 +25,6 @@ function Header(props: HeaderProps) {
                 <Nav.Item className = 'NavItem'>
                     <Nav.Link className = 'NavLink' href = '/Contact'>Contact</Nav.Link>
                 </Nav.Item>
-                {/* <Nav.Item>
-                    <Menu className = 'Menu' />
-                </Nav.Item> */}
             </Nav>
         </Navbar>
     );

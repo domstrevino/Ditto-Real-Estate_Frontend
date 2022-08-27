@@ -35,86 +35,93 @@ function Contact() {
 
     return (
         <div className = 'Contact'>
-            <Container className = 'Contact-about' style = {{ maxWidth: '80%', marginTop: '5%'}}>
-                <Card style = {{backgroundColor: 'rgb(18, 18, 18)'}}>
-                    <CardContent>
-                        <div className = 'Contact-about-content-body'>
-                            <div className = 'Contact-about-content-left'>
-                                <form onSubmit = {handleSubmit}>
-                                    <h1>Contact</h1>
-                                    <p>Please fill this form in a decent manner</p>
+            <Container>
+                <div className = 'Contact-About'>
+                    <Card variant = 'outlined'>
+                        <CardContent className = 'Contact-CardContent'>
+                            <div className = 'Body-Contact'>
+                                <div className = 'Body-Left'>
+                                    <form onSubmit = {handleSubmit}>
+                                        <h1>Contact</h1>
+                                        <p>Please fill this form in a decent manner</p>
 
-                                    <ul className = 'List'>
-                                        <li className = 'Item'>
-                                            <label 
-                                            className = 'Label'
-                                            htmlFor = 'name'>
-                                            Name:
-                                            </label><br />
+                                        <ul className = 'List'>
+                                            <li className = 'Item'>
+                                                <label 
+                                                className = 'Label'
+                                                htmlFor = 'name'>
+                                                Name:
+                                                </label><br />
+
+                                                <input 
+                                                className = 'Input' 
+                                                id = 'name' 
+                                                name = 'name' 
+                                                type = 'text' 
+                                                />
+                                            </li>
+
+                                            <li className = 'Item'>
+                                                <label 
+                                                className = 'Label' 
+                                                htmlFor = 'email'>
+                                                E-mail:
+                                                </label><br />
+
+                                                <input
+                                                className = 'Input'
+                                                id = 'email' 
+                                                name = 'email' 
+                                                type = 'text' 
+                                                />
+                                            </li>
+
+                                            <li className = 'Item'>
+                                                <label 
+                                                className = 'Label' 
+                                                htmlFor = 'message'>
+                                                Message:
+                                                </label><br />
+
+                                                <textarea 
+                                                className = 'Input'
+                                                style = {{  }} 
+                                                id = 'message' 
+                                                name = 'message' 
+                                                rows = {10}
+                                                />
+                                            </li>
 
                                             <input 
-                                            className = 'Input' 
-                                            id = 'name' 
-                                            name = 'name' 
-                                            type = 'text' 
+                                            className = 'Submit' 
+                                            type = 'Submit' 
                                             />
-                                        </li>
-
-                                        <li className = 'Item'>
-                                            <label 
-                                            className = 'Label' 
-                                            htmlFor = 'email'>
-                                            E-mail:
-                                            </label><br />
-
-                                            <input 
-                                            className = 'Input'
-                                            id = 'email' 
-                                            name = 'email' 
-                                            type = 'text' 
-                                            />
-                                        </li>
-
-                                        <li className = 'Item'>
-                                            <label 
-                                            className = 'Label' 
-                                            htmlFor = 'message'>
-                                            Message:
-                                            </label><br />
-
-                                            <textarea 
-                                            className = 'Input'
-                                            style = {{  }} 
-                                            id = 'message' 
-                                            name = 'message' 
-                                            rows = {10}
-                                            />
-                                        </li>
-
-                                        <input 
-                                        className = 'Submit' 
-                                        type = 'Submit' 
-                                        value = 'Submit' />
-                                    </ul>
-                                </form>
+                                        </ul>
+                                    </form>
+                                </div>
                             </div>
+                        </CardContent>
+                    </Card>
+    
+                    <div className = 'Body-Contact'>
+                        <div className = 'Body-Right'>
+                            <img 
+                            className = 'Image' 
+                            src = {picture} 
+                            alt = 'logo' 
+                            />
                         </div>
-                    </CardContent>
-                </Card>
-                <div className = 'Contact-about-content-body'>
-                    <div className = 'Contact-about-content-right' style = {{ borderRadius: '50%', width: '250px', height: '250px'}}>
-                        <img src = {picture} alt = 'logo' style={{clipPath: 'circle()'}}/>
+                        <div className = 'Contact-Info'>
+                            <h1><b>Sandy Ditto</b></h1>
+                            <h4>CRS, ABR, SRES, C-CREC</h4>
+                            <h4>Broker/Owner</h4>
+                            <div>&nbsp;</div>
+                            <p><b>Sandy Ditto & Associates</b></p>
+                            <p>1800 E. Memorial Rd. #100</p>
+                            <p>Oklahoma City, OK 73131</p>
+                            <p>(405) 210-7669</p>
+                        </div> 
                     </div>
-                    <div className = 'Contact-about-info-p'>
-                        <h1><b>Sandy Ditto</b></h1>
-                        <h4>CRS, ABR, SRES, C-CREC</h4>
-                        <h4>Broker/Owner</h4>
-                        <div>&nbsp;</div>
-                        <p><b>Sandy Ditto & Associates</b></p>
-                        <p>1800 E. Memorial Rd. #100</p>
-                        <p>Oklahoma City, OK 73131</p>
-                        <p>(405) 210-7669</p>
-                    </div> 
                 </div>
             </Container>
         </div>
