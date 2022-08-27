@@ -1,6 +1,5 @@
 {
   "name": "ditto_realestate",
-  "homepage": "http://sandydittorealestate.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -34,9 +33,6 @@
     "typescript": "^4.7.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    
     "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
