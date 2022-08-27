@@ -6,10 +6,6 @@ import { Card, CardContent, Typography } from '@mui/material';
 import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
 
 
-type TestimonialProps = {
-    //
-}
-
 const testimonialOne = 'Sandy Ditto sold my home to the first "looker". My neighbors were amazed. I have put in a lot of good words to everyone I know. Your friendly and prompt service was appreciated.';
 const oneWriter = '- Janis Tietgens Gibson';
 
@@ -73,7 +69,7 @@ const testimonials = [
     
 ];
 
-function Testimonials(props: TestimonialProps) {
+function Testimonials() {
     return (
         <div className = 'Testimonials'>
             <h1 className = 'Testimonials-h1'>Testimonials</h1>
@@ -86,6 +82,7 @@ function Testimonials(props: TestimonialProps) {
                 autoPlay = {true}
                 autoPlayInterval = {4000}
                 autoPlayStrategy = {'default'}
+                disableButtonsControls = {true}
                 />
             </Container>
         </div>

@@ -1,16 +1,9 @@
 .Contact {
     width: 100%;
     height: 100%;
-}
 
-.Contact-content {
-    position: absolute; 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    color: white;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgba(255, 255, 255);
 }
 
 .Contact-h1 {
@@ -18,11 +11,6 @@
     margin: auto;
     max-width: 25%;
     justify-content: center;
-    
-    border-style: groove;
-    border-top: none;
-    border-left: none;
-    border-right: none;
 
     color: white;
     font-family: fangsong;
@@ -30,11 +18,11 @@
 }
 
 .Contact-about {
-    /* position: static; */
-    color: rgba(255, 255, 255, 1);
-
     display: flex;
     flex-wrap: wrap;
+    
+    max-width: 80%;
+    margin-top: 5%;
 }
 
 
@@ -49,6 +37,7 @@
     color: rgba(255, 255, 255, 0.9);
     height: 100%;
     width: 100%;
+    
 
 }
 
@@ -57,26 +46,36 @@
     width: 100%;
 
     display: flex;
-    justify-content: center;
+    margin: auto;
 }
 
-.Contact-label {
+
+.List {
+    list-style: none;
+    list-style-type: none;
+    padding: 0;
+}
+
+.Label {
     font-family: 'Courier New', Courier, monospace;
 }
 
-.Contact-input {
-    display: grid;
-    width: 100%;
+.Input {
     height: 100%;
+    width: 100%;
+    display: grid;
+    
+    resize: none;
 }
 
-.Contact-submit {
+.Submit {
     display: flex;
     justify-content: center;
-    margin-top: 10%;
+
+    margin: auto;
 }
 
-.Contact-li {
+.Item {
     margin-bottom: 5%;
 }
 
