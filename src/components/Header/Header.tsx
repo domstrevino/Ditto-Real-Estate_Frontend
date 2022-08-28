@@ -16,14 +16,14 @@ function Header() {
                 </Navbar.Brand>
             </Nav>
             <Nav className = 'ms-auto'>
-                <Nav.Item className = 'NavItem'>
-                    <Nav.Link className = 'NavLink' href = '/'>Home</Nav.Link>
+                <Nav.Item className = 'Item'>
+                    <Nav.Link className = 'Link' href = '/'>Home</Nav.Link>
                 </Nav.Item>
-                <Nav.Item className = 'NavItem'>
-                    <Nav.Link className = 'NavLink' href = '/Testimonials'>Testimonials</Nav.Link>
+                <Nav.Item className = 'Item'>
+                    <Nav.Link className = 'Link' href = '/Testimonials'>Testimonials</Nav.Link>
                 </Nav.Item>
-                <Nav.Item className = 'NavItem'>
-                    <Nav.Link className = 'NavLink' href = '/Contact'>Contact</Nav.Link>
+                <Nav.Item className = 'Item'>
+                    <Nav.Link className = 'Link' href = '/Contact'>Contact</Nav.Link>
                 </Nav.Item>
             </Nav>
         </Navbar>

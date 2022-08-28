@@ -1,14 +1,14 @@
 
-.NavItem {
+.Item {
     padding-left: 10px;
     padding-right: 10px;
 }
 
-.NavClass {
+.Class {
     align-items: center;
 }
 
-.NavLink {
+.Link {
     color: white;
     font-size: 20px;
 }
