@@ -17,7 +17,7 @@ function Contact() {
             message: message.value
         };
 
-        const response = await fetch("/Contact", {
+        const response = await fetch("sandydittorealestate.netlify.app/Contact", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json;charset=utf-8",
