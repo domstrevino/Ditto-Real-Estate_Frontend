@@ -1,6 +1,6 @@
 import { Container } from 'react-bootstrap';
 import AliceCarousel from 'react-alice-carousel';
-import './index.css';
+import './../index.css';
 
 
 function Dashboard() {

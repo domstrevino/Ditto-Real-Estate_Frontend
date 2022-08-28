@@ -1,7 +1,7 @@
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 
-import './index.css';
+import './../index.css';
 
 import { Container, Card, CardContent, Typography } from '@mui/material';
 import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';

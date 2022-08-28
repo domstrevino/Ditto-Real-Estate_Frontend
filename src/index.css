@@ -1,3 +1,7 @@
+
+/*
+** INDEX.HTML
+*/
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -29,4 +33,216 @@ code {
     width: 100%;
 
     background-color: rgba(0, 0, 0, 0.7);
+}
+
+/*
+** DASHBOARD
+*/
+.Dashboard {
+	height: 100%;
+	width: 100%;
+	
+	font-family: 'Courier New', Courier, monospace;
+	color: rgba(255, 255, 255);
+}
+
+.Section-1 {
+	margin: 10% auto 0 auto;
+
+	border-style: double;
+	max-width: fit-content;
+}
+
+.Section-1-h1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	font-size: 70px;
+	letter-spacing: 3px;
+	padding: 0 20px 0 20px;
+}
+
+.Section-1-p {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	font-style: italic;
+	font-size: 21px;
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.Section-2 {
+	display: flex; 
+	margin: 5% auto 0 auto;
+	max-width: 80%;
+	flex-wrap: wrap;
+}
+
+.Section-2-head {
+	flex: 0 0 50%;
+	padding: 10px;
+}
+
+.Section-2-body {
+	flex: 0 0 50%;
+	padding: 10px;
+}
+
+/*
+** TESTIMONIALS
+*/
+.Testimonials {
+    width: 100%;
+    height: 100%;
+
+    font-family: 'fangsong';
+    color: rgb(255, 255, 255);
+}
+
+
+.Head-h1 {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    max-width: 25%;
+
+    border-style: groove;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.Head-p {
+    display: flex;
+    justify-content: center;
+
+    font-size: 18px;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.Body {
+    margin-top: 15%;
+}
+
+
+.Card {
+    margin: auto;
+    max-width: 50%;
+}
+
+.Card-Content {
+    background-color: rgb(18, 18, 18);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.Author {
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: 1;
+
+    color: rgb(255, 255, 255);
+}
+
+.Quote-Left {
+    padding-right: 7px;
+    color: rgb(255, 255, 255);
+}
+
+.Quote-Right {
+    padding-left: 7px;
+    color: rgb(255, 255, 255);
+}
+
+/*
+** CONTACT
+*/
+.Contact {
+    width: 100%;
+    height: 100%;
+
+    font-family: 'Courier New', Courier, monospace;
+    color: rgba(255, 255, 255);
+}
+
+.Contact-About {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.Contact-CardContent {
+    background-color: rgb(18, 18, 18);
+}
+
+.Body-Contact {
+    flex: 0 0 50%;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.Body-Left {
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    color: rgba(255, 255, 255, 0.9);
+}
+.Body-Right {
+    display: flex;
+    margin: auto;
+    height: 250px;
+    width: 250px;
+
+    border-radius: 50%;
+
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.List {
+    list-style: none;
+    list-style-type: none;
+    padding: 0;
+}
+
+.Label {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.Input {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    
+    resize: none;
+}
+
+.Submit {
+    display: flex;
+    justify-content: center;
+
+    margin: auto;
+}
+
+.Item {
+    margin-bottom: 5%;
+}
+
+
+
+.Image {
+    clip-path: circle();
+}
+
+.Contact-Info {
+    display: grid;
+    justify-items: center;
+
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 5%;
 }
