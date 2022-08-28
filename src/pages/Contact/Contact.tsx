@@ -27,8 +27,6 @@ function Contact() {
         
         const result = await response.json();
         alert(result.status);
-
-        return response.json();
     };
 
     
