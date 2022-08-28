@@ -6,7 +6,7 @@ import './index.css';
 
 function Contact() {
 
-    const handleSubmit = async (e: any) => {
+    const sendMail = async (e: any) => {
         e.preventDefault();
 
         const { name, email, message } = e.target.elements;
@@ -16,7 +16,7 @@ function Contact() {
             message: message.value
         };
 
-        const response = await fetch("https://dittorealestate.herokuapp.com/", {
+        const response = await fetch("/contact", {
             method: "POST",
             headers: {
                 "Clear-Site-Data": "*",
@@ -24,10 +24,14 @@ function Contact() {
             },
             body: JSON.stringify(details),
         });
-
+        
         const result = await response.json();
         alert(result.status);
+
+        return response.json();
     };
+
+    
 
     return (
         <div className = 'Contact'>
@@ -37,7 +41,7 @@ function Contact() {
                         <CardContent className = 'Contact-CardContent'>
                             <div className = 'Body-Contact'>
                                 <div className = 'Body-Left'>
-                                    <form onSubmit = {handleSubmit}>
+                                    <form onSubmit = {sendMail}>
                                         <h1>Contact</h1>
                                         <p>Please fill this form in a decent manner</p>
 
