@@ -1,5 +1,4 @@
-import { Card, CardContent } from '@mui/material';
-import { Container } from 'react-bootstrap';
+import { Container, Card, CardContent } from '@mui/material';
 
 import picture from './../../images/Sandy-Ditto.jpg';
 import './index.css';
@@ -17,10 +16,11 @@ function Contact() {
             message: message.value
         };
 
-        const response = await fetch("sandydittorealestate.netlify.app/Contact", {
+        const response = await fetch("www.sandydittorealestate.com/contact", {
             method: "POST",
             headers: {
-                "Content-Type": "application/json;charset=utf-8",
+                "Clear-Site-Data": "*",
+                "Content-Type": "application/json",
             },
             body: JSON.stringify(details),
         });
