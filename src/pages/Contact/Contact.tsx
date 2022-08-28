@@ -16,7 +16,7 @@ function Contact() {
             message: message.value
         };
 
-        const response = await fetch("www.sandydittorealestate.com/contact", {
+        const response = await fetch("/contact", {
             method: "POST",
             headers: {
                 "Clear-Site-Data": "*",
