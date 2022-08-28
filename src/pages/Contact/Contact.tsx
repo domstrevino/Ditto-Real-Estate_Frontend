@@ -16,7 +16,7 @@ function Contact() {
             message: message.value
         };
 
-        const response = await fetch("https://dittorealestate.herokuapp.com/contact", {
+        const response = await fetch("https://dittorealestate.herokuapp.com/", {
             method: "POST",
             headers: {
                 "Clear-Site-Data": "*",
