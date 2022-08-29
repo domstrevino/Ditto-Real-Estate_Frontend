@@ -9,7 +9,6 @@ import Header from './components/Header/Header';
 import './index.css';
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { Container } from 'react-bootstrap';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
@@ -19,7 +18,6 @@ root.render(
             <div className = 'Overlay'>
                 <BrowserRouter>
 
-                {/* <Container> */}
                     <Header />
                     <Routes>
                         <Route>
@@ -28,7 +26,6 @@ root.render(
                             <Route path = '/Testimonials' element = { <Testimonials /> } />
                         </Route>
                     </Routes>
-                {/* </Container> */}
 
                 </BrowserRouter>
             </div>
