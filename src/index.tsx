@@ -19,16 +19,16 @@ root.render(
             <div className = 'Overlay'>
                 <BrowserRouter>
 
-                    <Container>
-                        <Header />
-                        <Routes>
-                            <Route>
-                                <Route path = '/' element = { <Dashboard /> } />
-                                <Route path = '/Contact' element = { <Contact /> } />
-                                <Route path = '/Testimonials' element = { <Testimonials /> } />
-                            </Route>
-                        </Routes>
-                    </Container>
+                {/* <Container> */}
+                    <Header />
+                    <Routes>
+                        <Route>
+                            <Route path = '/' element = { <Dashboard /> } />
+                            <Route path = '/Contact' element = { <Contact /> } />
+                            <Route path = '/Testimonials' element = { <Testimonials /> } />
+                        </Route>
+                    </Routes>
+                {/* </Container> */}
 
                 </BrowserRouter>
             </div>

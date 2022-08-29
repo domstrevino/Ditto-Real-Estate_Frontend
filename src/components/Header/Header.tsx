@@ -11,7 +11,11 @@ function Header() {
             <Nav className = "ml-auto">
                 <Navbar.Brand>
                     <Nav.Link href = '/'>
-                        <img className = 'Logo' src = {picture} alt = 'Logo' />
+                        <img
+                        className = 'Logo'
+                        src = {picture}
+                        alt = 'Logo'
+                        />
                     </Nav.Link>
                 </Navbar.Brand>
             </Nav>

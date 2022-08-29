@@ -105,7 +105,7 @@ function Contact() {
                             <img 
                             className = 'Image' 
                             src = {picture} 
-                            alt = 'logo' 
+                            alt = 'Logo' 
                             />
                         </div>
                         <div className = 'Contact-Info'>
@@ -114,7 +114,7 @@ function Contact() {
                             <h4>Broker/Owner</h4>
                             <div>&nbsp;</div>
                             <p><b>Sandy Ditto & Associates</b></p>
-                            <p>1800 E. Memorial Rd. #100</p>
+                            <p>1800 E. Memorial Rd. #101</p>
                             <p>Oklahoma City, OK 73131</p>
                             <p>(405) 210-7669</p>
                         </div> 

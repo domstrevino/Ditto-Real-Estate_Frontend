@@ -1,20 +1,18 @@
+.NavClass {
+    width: 80%;
+
+    margin: 0 auto;
+}
+
 .Item {
     padding-left: 10px;
     padding-right: 10px;
 }
 
-.Class {
-    align-items: center;
-}
-
 .Link {
     color: white;
+    
     font-size: 20px;
-}
-
-.Menu {
-    margin: 10px;
-    color: white;
 }
 
 .Logo {
