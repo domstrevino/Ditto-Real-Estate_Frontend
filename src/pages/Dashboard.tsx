@@ -29,7 +29,7 @@ function Dashboard() {
                 <p>Start out with one program and switch to another, you are truly in charge of the marketing of your property with Sandy Ditto.</p>
             </div>
             <div className = 'Section-2-body'>
-                <p>With over 44 years of successful sales and marketing experience, Sandy Ditto offers a wide range of options to the marketing of your home. From simple MLS FOR Sale By Owner advertising, at a cost of $399, to full services that range from 2% - 5% commission, you control, without sacrificing services.</p>
+                <p>With over 44 years of successful sales and marketing experience, Sandy Ditto offers a wide range of options to the marketing of your home. From simple MLS For Sale By Owner advertising, at a cost of $399, to full services that range from 2% - 5% commission, you control, without sacrificing services.</p>
             </div>
 
         </section>

@@ -41,7 +41,6 @@ function Contact() {
                                 <div className = 'Body-Left'>
                                     <form onSubmit = {sendMail}>
                                         <h1>Contact</h1>
-                                        <p>Please fill this form in a decent manner</p>
 
                                         <ul className = 'List'>
                                             <li className = 'Item'>
