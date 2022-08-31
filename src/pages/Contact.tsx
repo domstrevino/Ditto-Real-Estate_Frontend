@@ -38,16 +38,18 @@ function Contact() {
                     <CardContent className = 'Contact-CardContent'>
                         <div className = 'Body-Contact'>
                             <div className = 'Body-Left'>
-                                <img 
-                                className = 'Image' 
-                                src = {picture} 
-                                alt = 'Logo' 
-                                />
+                                <div className = 'picWrapper'>
+                                    <img 
+                                    className = 'Image' 
+                                    src = {picture} 
+                                    alt = 'Logo' 
+                                    />
+                                </div>
                                 <div className = 'Contact-Info'>
                                     <h1><b>Sandy Ditto</b></h1>
                                     <h4>CRS, ABR, SRES, C-CREC</h4>
                                     <h4>Broker/Owner</h4>
-                                    <div>&nbsp;</div>
+                                    {/* <div>&nbsp;</div> */}
                                     {/* <p><b>Sandy Ditto & Associates</b></p>
                                     <p>1800 E. Memorial Rd. #101</p>
                                     <p>Oklahoma City, OK 73131</p>
@@ -56,9 +58,12 @@ function Contact() {
                                 
                             </div>
                             <div className = 'Body-Right'>
-                                <form className = 'Form' onSubmit = {sendMail}>
+                                <div className = 'h1-wrapper'>
                                     <h1>Contact</h1>
-                                    <div className = 'wrapper'>
+                                </div>
+                                <div className = 'wrapper'>
+                                    <form className = 'Form' onSubmit = {sendMail}>
+                                    
                                         <ul className = 'List'>
                                             <li className = 'Item'>
                                                 {/* <label 
@@ -105,7 +110,7 @@ function Contact() {
                                                 id = 'message' 
                                                 name = 'message'
                                                 placeholder = 'Message'
-                                                rows = {10}
+                                                rows = {7}
                                                 />
                                             </li>
 
@@ -114,8 +119,8 @@ function Contact() {
                                             type = 'Submit' 
                                             />
                                         </ul>
-                                    </div>
-                                </form>
+                                    </form>
+                                </div>
                             </div>
                             
                         </div>
