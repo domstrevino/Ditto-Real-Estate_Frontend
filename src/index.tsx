@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom/client';
 import Dashboard from './pages/Dashboard';
 import Contact from './pages/Contact';
 import Testimonials from './pages/Testimonials';
+
 import Header from './components/Header/Header';
 
 import './index.css';
@@ -26,7 +27,6 @@ root.render(
                             <Route path = '/Testimonials' element = { <Testimonials /> } />
                         </Route>
                     </Routes>
-
                 </BrowserRouter>
             </div>
         </div>

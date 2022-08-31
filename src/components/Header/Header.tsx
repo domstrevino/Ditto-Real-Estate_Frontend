@@ -2,7 +2,7 @@ import { Nav, Navbar } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
 
-import picture from './../../images/ditto_real-estate.png';
+// import picture from './../../images/ditto_real-estate.png';
 
 
 function Header() {
@@ -11,11 +11,15 @@ function Header() {
             <Nav className = "ml-auto">
                 <Navbar.Brand>
                     <Nav.Link href = '/'>
-                        <img
+                        {/* <img
                         className = 'Logo'
                         src = {picture}
                         alt = 'Logo'
-                        />
+                        /> */}
+                        <div className = 'div'>
+                            <h2>Ditto Real Estate</h2>
+                            <span style = {{ color: 'rgba(255, 255, 255, 0.6)', fontStyle: 'italic'}}>Sandy Ditto & Associates</span>
+                        </div>
                     </Nav.Link>
                 </Navbar.Brand>
             </Nav>

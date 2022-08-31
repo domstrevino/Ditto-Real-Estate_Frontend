@@ -9,9 +9,9 @@ const testThree = 'I cannot recommend Sany Ditto highly enough. We have used two
 const testFour = "Sandy Ditto's assistance, expedience and professionalism with the listing and sale of our Grandmother's condo was greatly appreciated. We were pleasantly surprised at how seamless and smooth the process occurred. I am happy to recommend Sandy Ditto for anyone that desires great organizational skills and a pleasant demeanor.";
 
 const one = '- Janis Tietgens Gibson';
-const two = '-Tesha Davis';
-const three = '-Lou & Rose Marie Varga';
-const four = '-Brian Shingleton';
+const two = '- Tesha Davis';
+const three = '- Lou & Rose Marie Varga';
+const four = '- Brian Shingleton';
 
 
 function Testimonials() {
@@ -20,8 +20,9 @@ function Testimonials() {
             <div className = 'T-Head'>
                 <h1>Testimonials</h1>
             </div>
-            {/* CARD ONE */}
+            
             <div className = 'T-Cards'>
+                {/* CARD ONE */}
                 <Card className = 'T-Card' variant = 'outlined'>
                     <CardContent className = 'T-Card-Content'>
                         <Typography gutterBottom>

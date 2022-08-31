@@ -66,7 +66,6 @@ code {
     margin: 0 auto;
 
     font-family: 'Courier New', Courier, monospace;
-    color: rgba(255, 255, 255, 0.6);
 }
 
 .D-Body {
@@ -114,11 +113,12 @@ code {
     position: relative;
     display: grid;
 
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: auto;
     grid-gap: 1rem;
 
-    margin-top: 3%;
+    margin: 3% auto;
+    width: 80%;
 }
 
 .T-Card {
@@ -148,6 +148,7 @@ code {
     margin-bottom: 5%;
     bottom: 0;
 
+    font-style: italic;
     color: rgb(255, 255, 255);
 }
 
@@ -165,56 +166,91 @@ code {
 ** CONTACT
 */
 .Contact {
-    width: 100%;
     height: 100%;
-
-    font-family: 'Courier New', Courier, monospace;
-    color: rgba(255, 255, 255);
+    width: 80%;
+    
+    margin: 0 auto;
 }
 
 .Contact-About {
     display: flex;
-    justify-content: center;
-    margin: auto;
+    justify-content: space-evenly;
+    margin: 3% auto;
+
+    width: 80%;
+}
+
+.Contact-Card {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.4) !important;
 }
 
 .Contact-CardContent {
+    height: 100%;
+    width: 100%;
+
     background-color: rgb(18, 18, 18);
 }
 
 .Body-Contact {
+    display: flex;
+    
     flex: 0 0 50%;
     padding: 10px;
+
     font-family: 'Courier New', Courier, monospace;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .Body-Left {
     position: relative;
+
     height: 100%;
-    width: 100%;
+    width: 50%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Body-Right {
+    position: relative;
+
+    width: 50%;
 
     color: rgba(255, 255, 255, 0.9);
 }
-.Body-Right {
-    display: flex;
-    margin: auto;
-    height: 250px;
-    width: 250px;
 
-    border-radius: 50%;
+.Form {
+    position: relative;
+    height: 100%;
+}
 
-    color: rgba(255, 255, 255, 0.9);
+.wrapper {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 100%;
 }
 
 .List {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
     list-style: none;
     list-style-type: none;
+
     padding: 0;
 }
 
-.Label {
-    font-family: 'Courier New', Courier, monospace;
-}
+/* .Label {
+    
+} */
 
 .Input {
     height: 100%;
@@ -222,6 +258,8 @@ code {
     display: grid;
     
     resize: none;
+    
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .Submit {
@@ -232,6 +270,8 @@ code {
 }
 
 .Item {
+    padding: 0 !important;
+    
     margin-bottom: 5%;
 }
 
@@ -247,4 +287,23 @@ code {
 
     font-family: 'Courier New', Courier, monospace;
     margin-top: 5%;
+}
+
+
+
+
+
+
+
+.div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0 5px;
+
+    color: white;
+    font-family: monospace;
+
+    border-style: double;
 }

@@ -5,10 +5,6 @@ import picture from './../images/ditto_real-estate.png';
 function Dashboard() {
     return (
         <div className = 'Dashboard'>
-            {/* <section className = 'Section-1'>
-                <h1 className = 'Section-1-h1'>Ditto Real Estate</h1>
-                <p className = 'Section-1-p'>Sandy Ditto & Associates</p>
-            </section> */}
 
             <div className = 'D-Head'>
                 <h1>SAVINGS WITHOUT SACRIFICING SERVICE</h1>

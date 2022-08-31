@@ -1,20 +1,17 @@
-import { MDBFooter, MDBContainer, MDBRow, MDBCol } from 'mdb-react-ui-kit';
+import { MDBFooter } from 'mdb-react-ui-kit';
 
 import './index.css';
-
+import picture from './../../images/ditto_real-estate.png';
 
 function Footer() {
     return (
-        <MDBFooter bgColor = 'dark'>
-            <MDBContainer>
-                <MDBRow>
-                    <MDBCol>
-                        <h6>Sandy Ditto & Associates</h6>
-                        <p>1800 E. Memorial Road #101</p>
-                        <p></p>
-                    </MDBCol>
-                </MDBRow>
-            </MDBContainer>
+        <MDBFooter className = 'Footer'>
+            <div><img src = {picture} alt = 'Logo' /></div>
+            <div className = 'Foot'>
+                <h5>Sandy Ditto & Associates</h5>
+                <div>1800 E. Memorial Road #101</div>
+                <div>Oklahoma City, OK 73131</div>
+            </div>
         </MDBFooter>
     );
 }
