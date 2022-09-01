@@ -33,103 +33,71 @@ function Contact() {
 
     return (
         <div className = 'Contact'>
-            <div className = 'Contact-About'>
-                <Card className = 'Contact-Card' variant = 'outlined'>
-                    <CardContent className = 'Contact-CardContent'>
-                        <div className = 'Body-Contact'>
-                            <div className = 'Body-Left'>
-                                <div className = 'picWrapper'>
-                                    <img 
-                                    className = 'Image' 
-                                    src = {picture} 
-                                    alt = 'Logo' 
-                                    />
-                                </div>
-                                <div className = 'Contact-Info'>
+            <div className = 'C-About'>
+                <Card className = 'C-Card' variant = 'outlined'>
+                    <CardContent className = 'C-CardContent'>
+                        <div className = 'C-Body'>
+                            <div className = 'C-Left'>
+                                <img 
+                                className = 'C-Image' 
+                                src = {picture} 
+                                alt = 'Logo' 
+                                />
+                                <div className = 'C-Info'>
                                     <h1><b>Sandy Ditto</b></h1>
                                     <h4>CRS, ABR, SRES, C-CREC</h4>
                                     <h4>Broker/Owner</h4>
-                                    {/* <div>&nbsp;</div> */}
-                                    {/* <p><b>Sandy Ditto & Associates</b></p>
-                                    <p>1800 E. Memorial Rd. #101</p>
-                                    <p>Oklahoma City, OK 73131</p>
-                                    <p>(405) 210-7669</p> */}
                                 </div> 
                                 
                             </div>
-                            <div className = 'Body-Right'>
-                                <div className = 'h1-wrapper'>
-                                    <h1>Contact</h1>
-                                </div>
-                                <div className = 'wrapper'>
-                                    <form className = 'Form' onSubmit = {sendMail}>
-                                    
-                                        <ul className = 'List'>
-                                            <li className = 'Item'>
-                                                {/* <label 
-                                                className = 'Label'
-                                                htmlFor = 'name'>
-                                                Name:
-                                                </label><br /> */}
+                            <div className = 'C-Right'>
+                                <h1>Contact</h1>
 
-                                                <input 
-                                                className = 'Input' 
-                                                id = 'name' 
-                                                name = 'name' 
-                                                type = 'text'
-                                                placeholder = 'Name'
-                                                />
-                                            </li>
-
-                                            <li className = 'Item'>
-                                                {/* <label 
-                                                className = 'Label' 
-                                                htmlFor = 'email'>
-                                                E-mail:
-                                                </label><br /> */}
-
-                                                <input
-                                                className = 'Input'
-                                                id = 'email' 
-                                                name = 'email' 
-                                                type = 'text'
-                                                placeholder = 'E-mail'
-                                                />
-                                            </li>
-
-                                            <li className = 'Item'>
-                                                {/* <label 
-                                                className = 'Label' 
-                                                htmlFor = 'message'>
-                                                Message:
-                                                </label><br /> */}
-
-                                                <textarea 
-                                                className = 'Input'
-                                                style = {{  }} 
-                                                id = 'message' 
-                                                name = 'message'
-                                                placeholder = 'Message'
-                                                rows = {7}
-                                                />
-                                            </li>
-
+                                <form className = 'C-Form' onSubmit = {sendMail}>
+                                    <ul className = 'C-List'>
+                                        <li className = 'C-Item'>
                                             <input 
-                                            className = 'Submit' 
-                                            type = 'Submit' 
+                                            className = 'C-Input' 
+                                            id = 'name' 
+                                            name = 'name' 
+                                            type = 'text'
+                                            placeholder = 'Name'
                                             />
-                                        </ul>
-                                    </form>
-                                </div>
+                                        </li>
+
+                                        <li className = 'C-Item'>
+                                            <input
+                                            className = 'C-Input'
+                                            id = 'email' 
+                                            name = 'email' 
+                                            type = 'text'
+                                            placeholder = 'E-mail'
+                                            />
+                                        </li>
+
+                                        <li className = 'C-Item'>
+                                            <textarea 
+                                            className = 'C-Input'
+                                            style = {{  }} 
+                                            id = 'message' 
+                                            name = 'message'
+                                            placeholder = 'Message'
+                                            rows = {7}
+                                            />
+                                        </li>
+
+                                        <input 
+                                        className = 'C-Submit' 
+                                        type = 'Submit' 
+                                        />
+                                    </ul>
+                                </form>
+
                             </div>
-                            
                         </div>
                     </CardContent>
                 </Card>
 
-            {/* <div className = 'Body-Contact'> */}
-                
-            {/* </div> */}
             </div>
         </div>
     );

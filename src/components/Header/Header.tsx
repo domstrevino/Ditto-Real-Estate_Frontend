@@ -2,36 +2,29 @@ import { Nav, Navbar } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
 
-// import picture from './../../images/ditto_real-estate.png';
-
 
 function Header() {
     return (
-        <Navbar className = 'NavClass'>
+        <Navbar className = 'H-Nav'>
             <Nav className = "ml-auto">
                 <Navbar.Brand>
                     <Nav.Link href = '/'>
-                        {/* <img
-                        className = 'Logo'
-                        src = {picture}
-                        alt = 'Logo'
-                        /> */}
-                        <div className = 'div'>
+                        <div className = 'H-Logo'>
                             <h2>Ditto Real Estate</h2>
-                            <span style = {{ color: 'rgba(255, 255, 255, 0.6)', fontStyle: 'italic'}}>Sandy Ditto & Associates</span>
+                            <h5 className = 'H-h5'>Sandy Ditto & Associates</h5>
                         </div>
                     </Nav.Link>
                 </Navbar.Brand>
             </Nav>
             <Nav className = 'ms-auto'>
-                <Nav.Item className = 'Item'>
-                    <Nav.Link className = 'Link' href = '/'>Home</Nav.Link>
+                <Nav.Item className = 'H-Item'>
+                    <Nav.Link className = 'H-Link' href = '/'>Home</Nav.Link>
                 </Nav.Item>
-                <Nav.Item className = 'Item'>
-                    <Nav.Link className = 'Link' href = '/Testimonials'>Testimonials</Nav.Link>
+                <Nav.Item className = 'H-Item'>
+                    <Nav.Link className = 'H-Link' href = '/Testimonials'>Testimonials</Nav.Link>
                 </Nav.Item>
-                <Nav.Item className = 'Item'>
-                    <Nav.Link className = 'Link' href = '/Contact'>Contact</Nav.Link>
+                <Nav.Item className = 'H-Item'>
+                    <Nav.Link className = 'H-Link' href = '/Contact'>Contact</Nav.Link>
                 </Nav.Item>
             </Nav>
         </Navbar>

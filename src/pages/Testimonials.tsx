@@ -24,7 +24,7 @@ function Testimonials() {
             <div className = 'T-Cards'>
                 {/* CARD ONE */}
                 <Card className = 'T-Card' variant = 'outlined'>
-                    <CardContent className = 'T-Card-Content'>
+                    <CardContent className = 'T-CardContent'>
                         <Typography gutterBottom>
                             <FaQuoteLeft className = 'T-Left' />
                             {testOne}
@@ -37,7 +37,7 @@ function Testimonials() {
                 </Card>
                 {/* CARD TWO */}
                 <Card className = 'T-Card' variant = 'outlined'>
-                    <CardContent className = 'T-Card-Content'>
+                    <CardContent className = 'T-CardContent'>
                         <Typography gutterBottom>
                             <FaQuoteLeft className = 'T-Left' />
                             {testTwo}
@@ -50,7 +50,7 @@ function Testimonials() {
                 </Card>
                 {/* CARD THREE */}
                 <Card className = 'T-Card' variant = 'outlined'>
-                    <CardContent className = 'T-Card-Content'>
+                    <CardContent className = 'T-CardContent'>
                         <Typography gutterBottom>
                             <FaQuoteLeft className = 'T-Left' />
                             {testThree}
@@ -63,7 +63,7 @@ function Testimonials() {
                 </Card>
                 {/* CARD FOUR */}
                 <Card className = 'T-Card' variant = 'outlined'>
-                    <CardContent className = 'T-Card-Content'>
+                    <CardContent className = 'T-CardContent'>
                         <Typography gutterBottom>
                             <FaQuoteLeft className = 'T-Left' />
                             {testFour}
