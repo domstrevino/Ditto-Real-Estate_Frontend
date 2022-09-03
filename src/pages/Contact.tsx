@@ -1,8 +1,7 @@
-import { Card, CardContent } from '@mui/material';
-
 import picture from './../images/Sandy-Ditto.jpg';
 import './../index.css';
 
+import { Card, CardContent } from '@mui/material';
 
 function Contact() {
 
@@ -44,7 +43,7 @@ function Contact() {
                                 alt = 'Logo' 
                                 />
                                 <div className = 'C-Info'>
-                                    <h1><b>Sandy Ditto</b></h1>
+                                    <h1>Sandy Ditto</h1>
                                     <h6>CRS, ABR, SRES, C&#8209;CREC</h6>
                                     <h6>Broker/Owner</h6>
                                 </div> 
@@ -100,12 +99,14 @@ function Contact() {
                                 <a 
                                 href='http://maps.google.com/?q=1800?East?Memorial?Road?STE?101,?Oklahoma?City,?OK?73131'
                                 target = '_blank'
-                                rel = 'noopener noreferrer'>
+                                rel = 'noopener noreferrer'
+                                className = 'C-Link'>
                                     1800 E. Memorial Rd. #101<br /> Oklahoma City, OK 73131
                                 </a>
                             </p>
                             <p>
-                                <a href = 'tel:4052107669'>
+                                <a href = 'tel:4052107669'
+                                className = 'C-Link'>
                                     (405) 210-7669
                                 </a>
                             </p>

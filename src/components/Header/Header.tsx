@@ -1,7 +1,8 @@
-import { Nav, Navbar } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
 
+import { Nav, Navbar } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 
 function Header() {
     return (
@@ -17,14 +18,14 @@ function Header() {
                 </Nav>
                 <Nav>
                     <div className = 'Wrapper-Routes'>
-                        <Nav.Item>
-                            <Nav.Link className = 'H-Link' href = '/'>Home</Nav.Link>
+                        <Nav.Item className = 'H-Item'>
+                            <NavLink to = '/' className = {(status) => (status.isActive ? 'active' : 'inactive')}>Home</NavLink>
                         </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link className = 'H-Link' href = '/Testimonials'>Testimonials</Nav.Link>
+                        <Nav.Item className = 'H-Item'>
+                            <NavLink to = '/Testimonials' className = {(status) => (status.isActive ? 'active' : 'inactive')}>Testimonials</NavLink>
                         </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link className = 'H-Link' href = '/Contact'>Contact</Nav.Link>
+                        <Nav.Item className = 'H-Item'>
+                            <NavLink to = '/Contact' className = {(status) => (status.isActive ? 'active' : 'inactive')}>Contact</NavLink>
                         </Nav.Item>
                     </div>
                 </Nav>

@@ -1,7 +1,8 @@
+import './../index.css';
+
 import { Card, CardContent, Typography } from '@mui/material';
 import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
 
-import './../index.css';
 
 const testOne = 'Sandy Ditto sold my home to the first "looker". My neighbors were amazed. I have put in a lot of good words to everyone I know. Your friendly and prompt service was appreciated.';
 const testTwo = 'Sandy Ditto sold my home in 6 months in a hard to sell area with a slow market. She was always available for any questions, prompt to respond and made the experince a breeze. Very professional. I would recommend her services to anyone and my husband and I have used her services multiple times with wonderful outcomes.';

@@ -42,20 +42,40 @@
     color: rgb(255, 255, 255);
 }
 
-.Wrapper-Routes {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    font-size: large;
-}
-
-.H-Link {
-    color: white;
-}
-
 .H-Sub {
     font-style: italic;
 
     color: rgba(255, 255, 255, 0.6);
+}
+
+.Wrapper-Routes {
+    display: flex;
+    align-items: center;
+
+    font-size: large;
+}
+
+.H-Item {
+    padding: 0 1rem;
+}
+
+.active {
+    transition: all 0.5s ease-in-out;
+
+    text-underline-offset: 0.5rem;
+    text-decoration-color: cornflowerblue;
+    color: rgb(255, 255, 255);
+}
+
+.inactive {
+    transition: all 0.5s ease-in-out;
+
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.active:hover, .inactive:hover {
+    font-size: larger;
+
+    color: rgb(255, 255, 255);
 }

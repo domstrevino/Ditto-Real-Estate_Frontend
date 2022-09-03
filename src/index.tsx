@@ -9,20 +9,18 @@ import Header from './components/Header/Header';
 
 import './index.css';
 
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
     <React.StrictMode>
-        <Header />
-            <BrowserRouter>
+        <BrowserRouter>
+            <Header />
                 <Routes>
-                    <Route>
-                        <Route path = '/' element = { <Dashboard /> } />
-                        <Route path = '/Contact' element = { <Contact /> } />
-                        <Route path = '/Testimonials' element = { <Testimonials /> } />
-                    </Route>
+                    <Route path = '/' element = { <Dashboard /> } />
+                    <Route path = '/Contact' element = { <Contact /> } />
+                    <Route path = '/Testimonials' element = { <Testimonials /> } />
                 </Routes>
             </BrowserRouter>
     </React.StrictMode>

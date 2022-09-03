@@ -1,6 +1,6 @@
+import picture from './../images/ditto_real-estate.png';
 import './../index.css';
 
-import picture from './../images/ditto_real-estate.png';
 
 function Dashboard() {
     return (
