@@ -8,7 +8,7 @@ function Header() {
         <Navbar className = 'H-Nav'>
             <div className = 'H-Container'>
                 <Nav>
-                    <Navbar.Brand className = 'Brand' href='/'>
+                    <Navbar.Brand className = 'H-Brand' href='/'>
                         <div className = 'Wrapper-Logo'>
                             <div>Ditto Real Estate</div>
                             <div className = 'H-h5'>Sandy Ditto & Associates</div>
@@ -34,8 +34,3 @@ function Header() {
 }
 
 export default Header;
-
-
-// className = "ml-auto"
-
-// className = 'ms-auto'

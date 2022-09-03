@@ -13,6 +13,10 @@
 }
 
 @media (max-width: 800px) {
+    .H-Nav {
+        border-bottom: 1px solid rgb(255, 255, 255);
+    }
+
     .H-Container {
         display: grid;
         justify-content: center;
