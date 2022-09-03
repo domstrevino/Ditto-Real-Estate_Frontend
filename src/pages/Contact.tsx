@@ -105,7 +105,7 @@ function Contact() {
                                 </a>
                             </p>
                             <p>
-                                <a href = 'tel:3305246377'>
+                                <a href = 'tel:4052107669'>
                                     (405) 210-7669
                                 </a>
                             </p>
