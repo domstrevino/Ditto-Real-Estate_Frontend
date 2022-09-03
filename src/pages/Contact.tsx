@@ -45,8 +45,8 @@ function Contact() {
                                 />
                                 <div className = 'C-Info'>
                                     <h1><b>Sandy Ditto</b></h1>
-                                    <h4>CRS, ABR, SRES, C-CREC</h4>
-                                    <h4>Broker/Owner</h4>
+                                    <h6>CRS, ABR, SRES, C-CREC</h6>
+                                    <h6>Broker/Owner</h6>
                                 </div> 
                                 
                             </div>
@@ -94,6 +94,22 @@ function Contact() {
                                 </form>
 
                             </div>
+                        </div>
+                        <div className = 'C-Bottom'>
+                            <p>
+                                <a 
+                                href='http://maps.google.com/?q=1800 E. Memorial Rd. #101, Oklahoma City, OK 73131'
+                                target = '_blank'
+                                rel = 'noopener noreferrer'>
+                                    1800 E. Memorial Rd. #101<br /> Oklahoma City, OK 73131
+                                </a>
+                            </p>
+                            <p>
+                                <a href = 'tel:3305246377'>
+                                    (405) 210-7669
+                                </a>
+                            </p>
+                            <p>sandyditto47@gmail.com</p>
                         </div>
                     </CardContent>
                 </Card>

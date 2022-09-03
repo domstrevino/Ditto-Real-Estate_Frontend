@@ -5,10 +5,19 @@
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-        sans-serif;
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    image-rendering: -webkit-optimize-contrast;
+
+    background-image: url('./images/okc.jpg');
+    background-color: rgb(50, 50, 50) !important;
+    background-blend-mode: multiply;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100vh;
 }
 
 code {
@@ -16,54 +25,33 @@ code {
         monospace;
 }
 
-.Background {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-
-    background-image: url('./images/okc.jpg');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
-
-.Overlay {
-    position: fixed;
-
-    height: 100%;
-    width: 100%;
-
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
 
 /*
 ** DASHBOARD
 */
+@media (max-width: 700px) {
+    .D-Head {
+        flex-direction: column;
+        align-items: center;
+    }
+    .D-Head-Break {
+        display: none;
+    }
+}
+
 .Dashboard {
-	width: 80%;
+	width: 100%;
 
     margin: 3% auto;
-	
-	font-family: Arial, Helvetica, sans-serif;
-	color: rgba(255, 255, 255);
+
+    overflow-y: auto;
+
+    color: rgb(255, 255, 255);
 }
 
 .D-Head {
     display: flex;
     justify-content: center;
-
-    margin: 0 auto;
-
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.D-Head-2 {
-    display: flex;
-    justify-content: center;
-
-    margin: 0 auto;
-
-    font-family: 'Courier New', Courier, monospace;
 }
 
 .D-Body {
@@ -81,50 +69,46 @@ code {
 /*
 ** TESTIMONIALS
 */
+
+@media (max-width: 900px) {
+    .T-Cards {
+        display: flex !important;
+        flex-direction: column;
+    }
+}
+
 .Testimonials {
-    height: 100%;
-    width: 80%;
+    width: 100%;
     
-    margin: 0 auto;
+    margin: 3% auto;
+
+    overflow-y: auto;
 
     color: rgb(255, 255, 255); 
 }
 
 .T-Head {
-    width: 60%;
-    margin: 0 auto;
-    
     display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    border-style: double;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    
-    font-family: 'Courier New', Courier, monospace;
+    justify-content: center;
 }
 
 .T-Cards {
     width: 80%;
-    margin: 3% auto;
+
+    margin: 3% auto; 
 
     display: grid;
-
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
-
 }
 
 .T-Card {
     position: relative;
 
-    border: 2px solid rgba(255, 255, 255, 0.4) !important;
-    border-radius: 4px;
-    
     padding: .5rem;
 
+    border: 2px solid rgba(255, 255, 255, 0.1) !important;
+    
     background-color: rgb(18, 18, 18) !important;
 }
 
@@ -135,20 +119,22 @@ code {
 .T-Author {
     position: absolute;
 
-    margin-bottom: 5%;
     bottom: 0;
 
     font-style: italic;
+
     color: rgb(255, 255, 255);
 }
 
 .T-Left {
     padding-right: 7px;
+
     color: rgb(255, 255, 255);
 }
 
 .T-Right {
     padding-left: 7px;
+
     color: rgb(255, 255, 255);
 }
 
@@ -156,13 +142,34 @@ code {
 /*
 ** CONTACT
 */
-.Contact {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 
-    width: 80%;
+@media (max-width: 800px) {
+    .C-Body {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .C-Left {
+        width: 100% !important;
+
+        display: grid !important;
+    }
+    .C-Right {
+        width: 100% !important;
+    }
+    .C-Image {
+        height: auto !important;
+        width: 50%;
+    }
+}
+
+.Contact {
+    width: 100%;
+    
+    margin: 3% auto;
+
+    overflow-y: auto;
+
+    color: rgb(255, 255, 255); 
 }
 
 .C-About {
@@ -172,32 +179,23 @@ code {
 }
 
 .C-Card {
-    border: 2px solid rgba(255, 255, 255, 0.4) !important;
+    border: 2px solid rgba(255, 255, 255, 0.1) !important;
 
     background-color: rgb(18, 18, 18) !important;
 }
 
 .C-CardContent {
-    background-color: rgb(18, 18, 18);
-
-    padding: 0 !important;
     padding-bottom: 0 !important;
 }
 
 .C-Body {
     display: flex;
-    
-    padding: 10px;
 
-    color: rgba(255, 255, 255, 0.9);
-    font-family: 'Courier New', Courier, monospace;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .C-Left {
     width: 50%;
-
-    margin-left: 1.5%;
-    /* margin-right: 1.5%; */
 
     display: flex;
     flex-direction: column;
@@ -207,10 +205,6 @@ code {
 .C-Image {
     height: 50%;
     margin: 0 auto;
-
-    display: flex;
-
-    padding: 10px 0;
     
     clip-path: circle();
 }
@@ -224,9 +218,6 @@ code {
 
 .C-Right {
     width: 50%;
-    
-    /* margin-left: 1.5%; */
-    margin-right: 1.5%;
 
     display: flex;
     flex-direction: column;
@@ -235,7 +226,7 @@ code {
 .C-Form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin-top: 3%;
 
     flex-grow: 1;
 }
@@ -249,19 +240,27 @@ code {
 }
 
 .C-Item {
-    padding: 0 !important;
-    
-    margin-bottom: 5%;
+    margin: 5% auto;
 }
 
 .C-Input {
     width: 100%;
     
+    overflow-y: scroll;
+
     resize: none;
 }
 
 .C-Submit {
     display: flex;
 
-    margin: auto;
+    margin: 0 auto;
+
+    background-color:rgba(255, 255, 255, 0.6);
+}
+
+.C-Bottom {
+    border-top: 1px solid rgb(255, 255, 255);
+
+    color: rgb(255, 255, 255);
 }

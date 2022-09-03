@@ -15,11 +15,10 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
     <React.StrictMode>
-        <div className = 'Background'>
-            <div className = 'Overlay'>
-                <BrowserRouter>
+        <Header />
 
-                    <Header />
+            <BrowserRouter>
+
                     <Routes>
                         <Route>
                             <Route path = '/' element = { <Dashboard /> } />
@@ -27,10 +26,9 @@ root.render(
                             <Route path = '/Testimonials' element = { <Testimonials /> } />
                         </Route>
                     </Routes>
-                    
-                </BrowserRouter>
-            </div>
-        </div>
+
+            </BrowserRouter>
+
     </React.StrictMode>
 );
 
