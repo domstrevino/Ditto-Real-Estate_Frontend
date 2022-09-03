@@ -1,34 +1,58 @@
 .H-Nav {
-    width: 80%;
+    width: 100%;
 
+    background-color: transparent;
+}
+
+.H-Container {
+    width: 80%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+    .H-Container {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+    }
+}
+
+.H-Brand {
     margin: 0 auto;
 }
 
-.H-Item {
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.H-Link {
-    color: white;
-    
-    font-size: 20px;
-}
-
-.H-Logo {
+.Wrapper-Logo {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    padding: 0 5px;
+    border: 1px double;
+    padding: 0.1em 0.5em;
 
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+
+    color: rgb(255, 255, 255);
+}
+
+.Wrapper-Routes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: small;
+}
+
+.H-Link {
     color: white;
-    font-family: monospace;
-
-    border-style: double;
 }
 
 .H-h5 {
-    color: rgba(255, 255, 255, 0.6);
+    font-size: medium;
     font-style: italic;
+
+    color: rgba(255, 255, 255, 0.6);
 }

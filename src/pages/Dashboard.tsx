@@ -1,14 +1,17 @@
 import './../index.css';
 
 import picture from './../images/ditto_real-estate.png';
+import Header from '../components/Header/Header';
 
 function Dashboard() {
     return (
         <div className = 'Dashboard'>
-
-            <div className = 'D-Head'>
-                <h1>SAVINGS WITHOUT SACRIFICING SERVICE</h1>
-            </div>  
+            <div className = 'wrapper1'>
+                <div className = 'D-Head'>
+                    <h1>SAVINGS WITHOUT SACRIFICING SERVICE</h1>
+                </div>
+            </div>
+            {/* 
             <div className = 'D-Body'>
                 <p>Ever see a sign go up in your neighborhood and within days see a sold sign?</p>
                 <p>Ever wonder if the Seller felt a little cheated on the high commission cost of a traditional franchise Real Estate Company when little to no marketing had to be done?</p>
@@ -27,7 +30,7 @@ function Dashboard() {
                 <p>Start out with one program and switch to another, you are truly in charge of the marketing of your property with Sandy Ditto.</p>
                 <p>With over 44 years of successful sales and marketing experience, Sandy Ditto offers a wide range of options to the marketing of your home. From simple MLS For Sale By Owner advertising, at a cost of $399, to full services that range from 2% - 5% commission, you control, without sacrificing services.</p>
                 <p>My last 15 sales my Sellers saved an average of over $6,800 in total commissions!</p>
-            </div>
+            </div> */}
 
         </div>
     );
