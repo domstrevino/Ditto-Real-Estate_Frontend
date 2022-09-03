@@ -1,3 +1,15 @@
+@media (max-width: 700px) {
+    .H-Nav {
+        border-bottom: 1px solid rgb(255, 255, 255);
+    }
+
+    .H-Container {
+        display: grid !important;
+        justify-content: center !important;
+        justify-items: center !important;
+    }
+}
+
 .H-Nav {
     width: 100%;
 
@@ -10,18 +22,6 @@
 
     display: flex;
     justify-content: space-between;
-}
-
-@media (max-width: 800px) {
-    .H-Nav {
-        border-bottom: 1px solid rgb(255, 255, 255);
-    }
-
-    .H-Container {
-        display: grid;
-        justify-content: center;
-        justify-items: center;
-    }
 }
 
 .H-Brand {
@@ -47,15 +47,14 @@
     align-items: center;
     justify-content: space-between;
 
-    font-size: small;
+    font-size: large;
 }
 
 .H-Link {
     color: white;
 }
 
-.H-h5 {
-    font-size: medium;
+.H-Sub {
     font-style: italic;
 
     color: rgba(255, 255, 255, 0.6);

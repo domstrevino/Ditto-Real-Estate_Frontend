@@ -11,7 +11,7 @@ function Header() {
                     <Navbar.Brand className = 'H-Brand' href='/'>
                         <div className = 'Wrapper-Logo'>
                             <div>Ditto Real Estate</div>
-                            <div className = 'H-h5'>Sandy Ditto & Associates</div>
+                            <div className = 'H-Sub'>Sandy Ditto & Associates</div>
                         </div>
                     </Navbar.Brand>
                 </Nav>

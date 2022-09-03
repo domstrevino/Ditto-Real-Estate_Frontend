@@ -20,7 +20,6 @@ function Testimonials() {
             <div className = 'T-Head'>
                 <h1>Testimonials</h1>
             </div>
-            
             <div className = 'T-Cards'>
                 {/* CARD ONE */}
                 <Card className = 'T-Card' variant = 'outlined'>

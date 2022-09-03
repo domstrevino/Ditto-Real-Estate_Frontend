@@ -45,7 +45,7 @@ function Contact() {
                                 />
                                 <div className = 'C-Info'>
                                     <h1><b>Sandy Ditto</b></h1>
-                                    <h6>CRS, ABR, SRES, C-CREC</h6>
+                                    <h6>CRS, ABR, SRES, C&#8209;CREC</h6>
                                     <h6>Broker/Owner</h6>
                                 </div> 
                                 
