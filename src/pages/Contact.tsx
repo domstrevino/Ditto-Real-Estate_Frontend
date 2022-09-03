@@ -98,7 +98,7 @@ function Contact() {
                         <div className = 'C-Bottom'>
                             <p>
                                 <a 
-                                href='http://maps.google.com/?q=1800 E. Memorial Rd. #101, Oklahoma City, OK 73131'
+                                href='http://maps.google.com/?q=1800?East?Memorial?Road?STE?101,?Oklahoma?City,?OK?73131'
                                 target = '_blank'
                                 rel = 'noopener noreferrer'>
                                     1800 E. Memorial Rd. #101<br /> Oklahoma City, OK 73131

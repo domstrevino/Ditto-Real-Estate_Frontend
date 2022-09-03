@@ -246,7 +246,7 @@ code {
 .C-Input {
     width: 100%;
     
-    overflow-y: scroll;
+    overflow-y: auto;
 
     resize: none;
 }
