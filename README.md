@@ -1,6 +1,6 @@
 # Business website for Sandy Ditto Real Estate
 
-This project was made for [Sandy Ditto Real Estate](www.sandydittorealestate.com). It is a static website with very minimal aesthetics to it. The backend for this project uses Node.js and was needed to send e-mails using nodemailer.
+This project was made for [Sandy Ditto Real Estate](https://www.sandydittorealestate.com). It is a static website with very minimal aesthetics to it. The backend for this project uses Node.js and was needed to send e-mails using nodemailer.
 
 ## Available Scripts
 
